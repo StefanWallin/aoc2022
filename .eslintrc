@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "plugin:import/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "rules": {
+    "react/prop-types": [0],
+    "no-unused-vars": [
+      "warn",
+      {
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": [
+          ["external", "builtin"],
+          "internal",
+          ["index", "sibling", "parent"]
+        ]
+      }
+    ]
+  }
+}
